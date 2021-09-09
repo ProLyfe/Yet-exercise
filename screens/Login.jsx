@@ -1,14 +1,16 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import AuthForm from '../components/AuthForm';
 
 const Login = () => (
-    <View style={styles.container}>
-        <Image source={require('../assets/yet-logo.png')} style={styles.logo}/>
-        <Text style={styles.text}>Login page</Text>
-        <AuthForm placeholder="Email"/>
-        <AuthForm placeholder="Mot de passe"/>
-    </View>
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+        <View style={styles.container}>
+            <Image source={require('../assets/yet-logo.png')} style={styles.logo}/>
+            <Text style={styles.text}>Login page</Text>
+            <AuthForm title="Email" placeholder="Entrer votre email"/>
+            <AuthForm title="Mot de passe" placeholder="Entrer votre mot de passe"/>
+        </View>
+    </TouchableWithoutFeedback>
 );
 
 const styles = StyleSheet.create({
@@ -19,8 +21,9 @@ const styles = StyleSheet.create({
       backgroundColor: 'white'
     },
     logo: {
-      height: 190,
-      width: 190
+      height: 170,
+      width: 170,
+      marginTop: -70
     },
     text: {
         color: 'white'
