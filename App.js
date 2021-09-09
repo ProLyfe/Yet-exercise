@@ -4,12 +4,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import Home from './screens/Home';
 import Login from './screens/Login';
 import Register from './screens/Register';
+import Navigator from './routes/stackRoutes';
 
 export default function App() {
   return (
     // <Register />
     // <Login />
-    <Home />
+    // <Home />
+    <Navigator />
   );
 }
 
