@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import AuthForm from '../components/AuthForm';
+import FlatButton from '../components/FlatButton';
 
 const Login = () => (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -9,6 +10,8 @@ const Login = () => (
             <Text style={styles.text}>Login page</Text>
             <AuthForm title="Email" placeholder="Entrer votre email"/>
             <AuthForm title="Mot de passe" placeholder="Entrer votre mot de passe"/>
+            <FlatButton backgroundColor="black" textColor="white" text="se connecter"/>
+            <FlatButton backgroundColor="white" textColor="black" text="s'enregistrer"/>
         </View>
     </TouchableWithoutFeedback>
 );
@@ -27,7 +30,7 @@ const styles = StyleSheet.create({
     },
     text: {
         color: 'white'
-    }
+    },
   });
 
 export default Login;
