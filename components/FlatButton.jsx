@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: 'black',
         marginTop: 20,
-        width: 210
+        width: 200
     },
     buttonText: {
         padding: 15,

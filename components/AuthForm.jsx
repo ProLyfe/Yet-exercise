@@ -15,7 +15,7 @@ const AuthForm = ({ title, placeholder }) => (
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 20
+        marginTop: 15
     },
     text: {
         fontWeight: 'bold'

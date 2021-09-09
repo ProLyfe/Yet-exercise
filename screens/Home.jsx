@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Tex, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const Home = () => (
     <View style={styles.container}>

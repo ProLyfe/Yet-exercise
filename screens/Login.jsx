@@ -7,9 +7,10 @@ const Login = () => (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.container}>
             <Image source={require('../assets/yet-logo.png')} style={styles.logo}/>
-            <Text style={styles.text}>Login page</Text>
-            <AuthForm title="Email" placeholder="Entrer votre email"/>
-            <AuthForm title="Mot de passe" placeholder="Entrer votre mot de passe"/>
+            <View style={styles.inputContainer}>
+                <AuthForm title="Email" placeholder="Entrer votre email"/>
+                <AuthForm title="Mot de passe" placeholder="Entrer votre mot de passe"/>
+            </View>
             <FlatButton backgroundColor="black" textColor="white" text="se connecter"/>
             <FlatButton backgroundColor="white" textColor="black" text="s'enregistrer"/>
         </View>
@@ -24,13 +25,13 @@ const styles = StyleSheet.create({
       backgroundColor: 'white'
     },
     logo: {
-      height: 170,
-      width: 170,
+      height: 150,
+      width: 150,
       marginTop: -70
     },
-    text: {
-        color: 'white'
-    },
+    inputContainer: {
+        marginTop: 10
+    }
   });
 
 export default Login;
