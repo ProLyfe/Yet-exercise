@@ -12,11 +12,10 @@ const AuthForm = ({ placeholder }) => (
 
 const styles = StyleSheet.create({
     input: {
-        borderColor: 'white',
+        borderColor: 'black',
         borderWidth: 1,
         padding: 10,
         backgroundColor: 'white',
-        borderRadius: 12,
         width: 240,
         marginTop: 30
     }
